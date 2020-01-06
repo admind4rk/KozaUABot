@@ -1,11 +1,10 @@
-import os
 import telebot
 from telebot import types
 #from telebot import apihelper
 from flask import Flask, request
 
 #apihelper.proxy = {'http':'socks5://426209941:2dpVwJ2h@orbtl.s5.opennetwork.cc:999'}
-bot = telebot.TeleBot(os.environ['token'])
+bot = telebot.TeleBot('843317831:AAEAlRbKZTNcIjcSvFb1rq_Lbtv7Qtei4og')
 #os.environ['token']
 #843317831:AAEAlRbKZTNcIjcSvFb1rq_Lbtv7Qtei4og
 
