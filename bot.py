@@ -21,5 +21,10 @@ elif massage.text == "/help":
 else:
     bot.send_message(message.from_user.id, "napishi poka")
 
-if __name__ == "__main__":
+@server.route('/', methods=['POST'])
+def webhook():
+    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    return "!", 200
+
+if __name__ == '__main__':
     server.run()
