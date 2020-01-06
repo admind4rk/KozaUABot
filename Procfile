@@ -1,1 +1,1 @@
-web: gunicorn app:server
+heroku ps:scale worker=1
