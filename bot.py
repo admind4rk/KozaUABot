@@ -6,19 +6,19 @@ bot = telebot.TeleBot(os.environ['token'])
 
 server = Flask{__name__}
 
-@bot.massage_handler(commands=['start'])
+@bot.message_handler(commands=['start'])
 def send_welcome(massage):
-    bot.send_massage(massage.chat.id, 'PRIVETTTTTTT')
+    bot.send_message(massage.chat.id, 'Alina dura, napishi poka')
 
-@bot.massage_handler(content_types=['text', 'document', 'audio'])
+@bot.message_handler(content_types=['text', 'document', 'audio'])
 
-def get_text_massages(message)
+def get_text_messages(message)
 
-if massage.text == "Privet":
-    bot.send_massage(massage.from_user.id, "Privet. Chem ya mogu pomoch'?")
+if message.text == "poka":
+    bot.send_message(message.from_user.id, "Privet. Chem ya mogu pomoch'?")
 elif massage.text == "/help":
-    bot.send_massage(massage.from_user.id, "Napishi privet")
+    bot.send_message(message.from_user.id, "napishi poka")
 else:
-    bot.send_massage(massage.from_user.id, "Ya tebya ne ponimayu")
+    bot.send_message(message.from_user.id, "napishi poka")
 
 bot.polling(none_stop=True, interval=0)
