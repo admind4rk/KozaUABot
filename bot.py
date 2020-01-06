@@ -8,7 +8,7 @@ server = Flask{__name__}
 
 @bot.message_handler(commands=['start'])
 def send_welcome(massage):
-    bot.send_message(massage.chat.id, 'Alina dura, napishi poka')
+    bot.send_message(message.chat.id, 'Alina dura, napishi poka')
 
 @bot.message_handler(content_types=['text', 'document', 'audio'])
 
